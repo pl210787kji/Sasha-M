@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+
 body, .content, .icons, .input {
     display: flex;
     align-items: center;
@@ -9,14 +11,15 @@ body, .content, .icons, .input {
 
 body {
     background-color: #434c50;
-    font-family: Georgia, serif;
+    font-family: "Lora", serif;
     color: #000;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .container, .content {
-    width: 1060px;
-    height: 755px;
+    width: 1070px;
+    height: 750px;
     background-color: #fff;
 }
 
@@ -27,13 +30,15 @@ body, .content, .input {
 
 .container {
     margin-top: 150px;
-    height: 100vh;
+    
 }
 
 .content {
     align-items: flex-start;
-    padding: 170px 124px 0 132px;
+    padding: 170px 135px 0 55px;
     position: relative;
+    margin-left: 70px;
+    border-left: solid 1px #c2c6c7;
 }
 input {
     border: unset;
@@ -45,12 +50,17 @@ input {
 .input {
     align-items: flex-start;
     position: absolute;
-    right: -70px;
+    right: -27%;
     top: -103px;
     background-color: #000;
-    width: 876px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
     height: 187px;
     padding: 50px 0 50px 64px;
+}
+
+.icons * {
+    opacity: 50%;
 }
 
 .author, .title, h4 {
@@ -64,10 +74,14 @@ h4, .title2, .author {
 
 .author {
     font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 0.2em;
 }
 
 .title {
     font-size: 78px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 900;
 }
 
 .title2 {
@@ -75,7 +89,7 @@ h4, .title2, .author {
 }
 
 .text {
-    width: 810px;
+    width: 100%;
     font-size: 27px;
     text-align: justify;
     line-height: 1.45;
@@ -83,19 +97,27 @@ h4, .title2, .author {
 
 .icons {
     position: absolute;
-    right: -70px;
-    top: 85px;
+    right: -7,5%;
+    top: 187px;
     background-color: #f6bc2c;
-    width: 810px;
+    width: 100%;
     height: 76px;
     justify-content: space-evenly;
-    padding-right: 266px;
+    padding-right: 55%;
 }
+
 
 h4 {
     font-size: 15px;
+    letter-spacing: 0.5em;
 }
 
 em {
     font-style: italic;
+}
+
+.icons *:hover  {
+     transform: scale(1.2); 
+    opacity: 100%;
+
 }
